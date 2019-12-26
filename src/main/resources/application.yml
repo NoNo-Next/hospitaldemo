@@ -4,12 +4,14 @@
 
 server:
   port: 8888
+#  servlet:
+#    context-path: /hospital
 
 #MySQL配置
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/hospital?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     password: root
     username: root
 
@@ -18,6 +20,19 @@ spring:
     view:
       suffix: .jsp
       prefix: /WEB-INF/jsp/
+  #redis配置
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 0
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 4
+        min-idle: 0
+        max-wait: -1
 
 #mybatis配置
 mybatis:

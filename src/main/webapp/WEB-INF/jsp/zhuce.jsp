@@ -12,6 +12,8 @@
     <title>注册</title>
     <script src="/js/jquery/jquery-3.4.1.js"></script>
     <script src="/js/jquery/jquery.md5.js"></script>
+    <link href="${pageContext.request.contextPath}/css/login/logintest.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login/logintest.css" type="text/css">
 </head>
 <body>
 <form action="" method="post">
@@ -23,7 +25,7 @@
 
 
     <button id="btn">按钮</button>
-
+        <div class="cla" id="nana" style="width: 500px; height: 500px; padding: auto"><p>关联css</p></div>
         <script>
         $("#btn").click(function(){
             alert("???")

@@ -6,4 +6,6 @@ public interface UserService {
     User findUserById(int id);
 
     User findUserByName(String userName);
+
+    boolean createUser(User user);
 }

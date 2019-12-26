@@ -22,5 +22,10 @@ public class IUserService implements UserService {
         return userMapper.findUserByName(userName);
     }
 
+    @Override
+    public boolean createUser(User user) {
+        return false;
+    }
+
 
 }
